@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<ApplicationIcon>mwpf_icon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="WPF-UI" Version="1.2.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Assets\wpfui.png" />
+		<Resource Include="Assets\wpfui.png" />
+		<None Remove="mwpf_icon.ico" />
+		<Resource Include="mwpf_icon.ico" />
+	</ItemGroup>
+
+</Project>
